@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="common" />
+        <module name="webrestaurant" />
+        <module name="service" />
+        <module name="entity" />
+        <module name="dao" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="common" target="12" />
+      <module name="dao" target="1.5" />
+      <module name="entity" target="1.5" />
+      <module name="restaurant" target="1.5" />
+      <module name="service" target="1.5" />
+      <module name="webrestaurant" target="12" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="webrestaurant" options="-parameters" />
+    </option>
+  </component>
+</project>
